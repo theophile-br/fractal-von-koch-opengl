@@ -8,4 +8,4 @@ Practicing OpenGL shader and event keyboard with von Koch Fractal
 
 Use the arrow left/right to increase the step number
 
-![](doc/demo.gif)
+![](doc/demo1.gif)
