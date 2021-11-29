@@ -2,7 +2,7 @@
 
 [wikipedia flocon de Koch](https://fr.wikipedia.org/wiki/Flocon_de_Koch)
 
-Practicing OpenGL shader and event keyboard with von Kock Fractal
+Practicing OpenGL shader and event keyboard with von Koch Fractal
 
 # Demo
 

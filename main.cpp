@@ -115,7 +115,12 @@ static void courbeVonKoch(int n,  Point depart, Point arrivee, vector<float> *ve
 
 static BufferData computeAndLoadShader(int n) {
         vector<float> vertices = {};
-        courbeVonKoch(n,{-1.5f,-0.5f},{1.5f,-0.5f}, &vertices);
+        Point p1 = {-0.9f,0.5f};
+        Point p2 = {0.9f,0.5f};
+        Point p3 = {0.0,-0.9};
+        courbeVonKoch(n,p1,p2, &vertices);
+        courbeVonKoch(n,p2,p3, &vertices);
+        courbeVonKoch(n,p3,p1, &vertices);
 
         unsigned int buffer;
         glGenBuffers(1,&buffer);
