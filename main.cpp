@@ -7,6 +7,8 @@
 #include <vector>
 #include <math.h>
 
+#define LOG(x) std::cout << x << std::endl
+
 using namespace std;
 
 struct ShaderProgramSource {
@@ -143,6 +145,7 @@ static BufferData computeAndLoadShader(int n) {
         ShaderProgramSource source = parseShader("basic.shader");
         int program = createShader(source.vertexSource,source.fragmentSource);
         glUseProgram(program);
+        LOG("Render " << indices.size() << " indices !");
         return { id: program, indices_size: (int)indices.size()};
 };
 
